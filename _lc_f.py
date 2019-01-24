@@ -2,7 +2,8 @@
 # [lc]
 # lexical compile
 
-from _require._objectframe import * # fuck import
+from _emlobjectframe import *
+
 
 def lc(s):
     whitechs = "\n\t\r "

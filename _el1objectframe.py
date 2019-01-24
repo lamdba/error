@@ -1,5 +1,5 @@
 
-# [objectframe]
+# [require.el1objectframe]
 #
 
 "哲学：assert是【仅当开发者出了问题】时才有效的东西"
@@ -7,7 +7,7 @@
 "在面向用户的版本中"
 
 
-from _require._objectframe._quickclass import localmake  # fuck fuck import
+from quickclass import localmake  # fuck fuck import
 
 d = locals()
 
@@ -19,8 +19,8 @@ localmake(d,"Literal",["obj"])
 localmake(d,"String",["sts"])
 localmake(d,"Int",["n"])
 localmake(d,"Bool",["b"])
-localmake(d,"Tuple",["t"])
-localmake(d,"List",["l"])
+localmake(d,"Tuple",["tl"])
+localmake(d,"List",["ll"])
 localmake(d,"Huple",["hthead","htl"])
 localmake(d,"Hist",["hlhead","hll"])
 
@@ -33,10 +33,6 @@ localmake(d,"Function",["arglname","e","inevr"])  # 应当完全闭包
 __all__ = ["Call","Cali","Sign","Literal",
 "String","Int","Bool","Tuple","List","Huple","Hist",
 "Blackbox","Namespace","A","Baseoperating","Function"]
-
-# ~ print(Baseoperating(abs))
-
-# ~ _error_types = []
 
 
 
