@@ -79,7 +79,7 @@ def _print(a,evr):
     print(apply(getmethod(a,"str"),Tuple([]),evr).sts)
     return a
 
-evr_base_d = {
+baseevr_d = {
 "Names":Baseoperating(make_name),
 "Namespace":Baseoperating(make_namespace),
 "Function":Baseoperating(make_function),
@@ -99,6 +99,6 @@ evr_base_d = {
 "now":Baseoperating(now),      # 用now是不对的，应该依次求值
 }
 
-evr_base = Namespace(evr_base_d)
+baseevr = Namespace(baseevr_d)
 
-__all__ = ["evr_base"]
+__all__ = ["baseevr"]
